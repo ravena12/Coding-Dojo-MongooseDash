@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2> Dashboard Users</h2>
+<table>
+	<tr>
+		<th>Name </th>
+		<th> Type </th>
+	</tr>
+	<% for (var x in users) { %>
+	<tr>
+		<td> <a href = '/animals/<%= users[x].id %>'> <%= users[x].name %> </a> 
+		</td> 
+		<td> <%= users[x].type %> </td> 
+	</tr>
+	<% } %>
+</table>
+<a href = '/animals/new'> Create </a>
+
+</body>
+</html>
